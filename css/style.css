@@ -5,10 +5,8 @@
 
 .wrapper {
 	margin: 0 auto;
-	height: 1080px;
-	width:1215px;
-	position: absolute;
-	top: 0;	
+	position: relative;
+	width: 1212px;
 }
 
 /*HEADER*/
@@ -32,6 +30,8 @@
 	line-height: 34px;
 	padding: 0 18px;
 	text-decoration: none;
+	text-align: center;
+
 }
 
 .main_menu a:hover {
@@ -39,7 +39,7 @@
 	color: white;
 }
 
-.main_menu li:nth-child(3) {
+.main_menu li:nth-child(4) {
 	border-right: 1px solid #56A2DC;
 }
 
@@ -57,27 +57,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ca8d9', end
 	text-decoration: underline;
 }
 
-.invent {
-	padding-right: 11px;
-	text-align: center;
+.main_menu li:nth-child(2) {
+	padding: 0;
+	
+}
+.main_menu li .invent {
+	padding-top: 5px;
 }
 
-/*CONTENT */
-
-.image {
-	width:100%;
+.invent {
+	padding-left: 17px;
+	text-align: center;
+	margin: 0;
 }
 
 /*FORM*/
-form {
+
+.content {
 	position: relative;
-    margin-top: 250px;
-    margin-left: 352px;
-	height: 610px;
+	background: url(..//img/background-2.jpg);
+	background-size: cover;
+	height: 1026px;
+}
+
+form {
+	position: absolute;
+    height: 610px;
 	width: 557px;
 	background-color: rgba(0, 0, 0, 0.5);
 	text-align: center;
 	font-family:Tahoma, Arial regular;
+	margin: 200px 353px;
 
 }
 
@@ -108,7 +118,7 @@ legend {
 .facebook-link i {
     display: block;
     float: left;
-    padding: 6px 12px 6px 13px;
+    padding: 6px 10px 6px 13px;
     font-size: 20px;
     border-right: 1px solid #203c6e;
 }
@@ -149,6 +159,11 @@ legend {
 	outline: none;
 }
 
+.field:hover {
+	border: none;
+	outline: none;
+}
+
 .form-text {
      width: 273px; /* Ширина поля */
      height: 34px;
@@ -173,21 +188,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5084', end
 box-shadow: 0px 0px 30px 0px rgba(73,122,151,1);
    }
 
-   .checkbox {
+.checkbox {
    	margin: 0px 0 17px -25px;
-   }
+}
 
-   .text-checkbox {
+.text-checkbox {
        font-family: Tahoma, Arial sans-serif;
        font-size: 15px;
        color: #fff;
        text-align: center;
-   }
-
-.submit-box {
-	margin-right: 0px;
 }
-.submit {
+
+.button-box {
+	height: 35px;
+}
+
+.button {
 	width: 150px;
 	height: 35px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#67c6e6+0,2e7aca+100 */
@@ -201,10 +217,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c6e6', end
 	font-size: 14px;
 	border-radius: 5px;
 	margin-bottom: 5px;
+	text-decoration: none;
+	padding: 9px 10px;
 }
 
-.submit value {
-	color: #fff;
+.button:hover:not(:active) {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .text-agree {
@@ -213,4 +233,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c6e6', end
 	width:313px;
 	height:29px;
 	text-align: center;
+	margin-top: 10px;
 }
