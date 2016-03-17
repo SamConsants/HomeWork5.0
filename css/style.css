@@ -7,6 +7,9 @@
 	margin: 0 auto;
 	position: relative;
 	width: 1212px;
+	background: url(..//img/background-2.jpg);
+	background-size: cover;
+	height: 1026px;
 }
 
 /*HEADER*/
@@ -171,7 +174,8 @@ legend {
      background: #000;
      border: none;
      border-bottom: 2px solid #484948;
-     padding-left: 10px;     
+     padding-left: 10px;
+     color: #fff;
    }
 
    .form-text:focus {
@@ -222,9 +226,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c6e6', end
 }
 
 .button:hover:not(:active) {
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
 }
 
 .text-agree {
